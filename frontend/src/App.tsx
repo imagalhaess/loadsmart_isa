@@ -6,8 +6,9 @@ import { useState } from 'react';
 import { DriverManagement } from './components/DriverManagement';
 import { TruckManagement } from './components/TruckManagement';
 import { AssignmentManagement } from './components/AssignmentManagement';
+import { Bodyguard } from './components/Bodyguard';
 
-type Tab = 'drivers' | 'trucks' | 'assignments';
+type Tab = 'drivers' | 'trucks' | 'assignments' | 'bodyguard';
 
 function App() {
   const [activeTab, setActiveTab] = useState<Tab>('drivers');
@@ -40,12 +41,19 @@ function App() {
           >
             Assignments
           </button>
+          <button
+            className={`tab ${activeTab === 'bodyguard' ? 'active' : ''}`}
+            onClick={() => setActiveTab('bodyguard')}
+          >
+            Bodyguard
+          </button>
         </nav>
 
         <div className="tab-content">
           {activeTab === 'drivers' && <DriverManagement />}
           {activeTab === 'trucks' && <TruckManagement />}
           {activeTab === 'assignments' && <AssignmentManagement />}
+          {activeTab === 'bodyguard' && <Bodyguard />}
         </div>
       </div>
     </div>
