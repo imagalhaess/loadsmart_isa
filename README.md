@@ -240,4 +240,8 @@ This project was created as a technical assessment for Loadsmart.
 
 ## Contact
 
-For questions or issues, please contact the development team.
+**Isabela Magalhães**
+- LinkedIn: [linkedin.com/in/isabela-mmc](https://www.linkedin.com/in/isabela-mmc)
+- Email: magalhaes569@gmail.com
+
+For questions about this project, feel free to reach out!
